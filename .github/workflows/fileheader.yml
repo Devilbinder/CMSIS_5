@@ -7,8 +7,9 @@ on:
     paths:
       - 'CMSIS/Core/**'
       - 'CMSIS/Core_A/**'
-      - 'CMSIS/CoreValidation/**'
-      - 'Device/ARM/**'
+      - 'CMSIS/RTOS2/Include/**'
+      - 'CMSIS/RTOS2/Source/**'
+      - 'Device/**'
   pull_request:
     branches: [ develop ]
     paths:
