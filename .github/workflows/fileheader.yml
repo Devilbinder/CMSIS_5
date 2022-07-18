@@ -1,6 +1,16 @@
 name: File header
 
 on:
+  workflow_dispatch:
+  push:
+    branches: [ develop ]
+    paths:
+      - 'CMSIS/Core/**'
+      - 'CMSIS/Core_A/**'
+      - 'CMSIS/CoreValidation/**'
+      - 'Device/ARM/**'
+
+on:
   pull_request:
     branches: [ develop ]
     paths:
